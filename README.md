@@ -29,9 +29,8 @@ src/pt3g_j2534/
 pip install -e .
 ```
 
-This builds `_pt3g_j2534` and installs the package as editable. On Windows,
-`pip install -e .` detects MSVC and uses `/O2` + `/std:c++17`; on Linux it uses
-`-O2` + `-std=c++17`.
+This builds `_pt3g_j2534` and installs the package as editable with MSVC
+(`/O2` + `/std:c++17` on Windows).
 
 This package has **no Python runtime dependencies** — the J2534 surface is a
 compiled C extension over ctypes.
@@ -46,23 +45,6 @@ pt3g_j2534.PassThruWrite(h, frame, len(frame), ctypes.byref(n))
 pt3g_j2534.PassThruRead(h, 1000, buf, ctypes.byref(size), ctypes.byref(n))
 pt3g_j2534.PassThruClose(h)
 ```
-
-## Cross-platform design
-
-### Linux (native)
-The `serial` driver opens the PT3G VCI's USB-serial interface (`/dev/ttyUSB*`)
-with GNU termios (`8N1, 115200 bps`). When no PT3G hardware is attached, the
-driver falls back to a headless virtual FIFO adapter, so the whole stack runs
-with zero hardware.
-
-### Windows
-The `actia` driver loads the official **Actia PDU API DLL**
-(`XS_D_PDU_API_64.dll` / `XS_D_PDU_API.dll`) installed by the official **PT3G
-Device Manager**. The Windows behaviour is preserved exactly (same product-ID /
-serial-number lookup and CAN channel model). The DLL path is guarded and is
-never loaded on Linux/macOS — the `actia` name is transparently remapped to the
-virtual adapter there so the library still loads and exports the `PassThru*`
-symbols.
 
 ## Building a Windows `.pyd` (standalone, no MSVC on the build box)
 
