@@ -53,7 +53,6 @@ setup(
         "Environment :: Win32 (MS Windows)",
         "Intended Audience :: Developers",
         "Intended Audience :: End Users/Desktop",
-        "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
         "Operating System :: Microsoft :: Windows",
         "Programming Language :: Python :: 3",
     ],
