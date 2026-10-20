@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pt3g_j2534"
+version = "1.0.0"
+description = "Open-source SAE J2534-1 v04.04/v05.00 pass-thru driver for the PT3G VCI"
+readme = "README.md"
+license = {text = "GPL-3.0"}
+requires-python = ">=3.10"
+authors = [
+    {name = "DTS-Monaco Contributors", email = "opensource@dts-monaco.example"},
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Win32 (MS Windows)",
+    "Intended Audience :: Developers",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+]
+
+[project.optional-dependencies]
+# The J2534 PassThru* surface has no Python runtime dependencies (ctypes + a
+# compiled C extension).  Install these only for the full DTS-Monaco toolchain.
+# gui = [ "PySide6>=6.12.0" ]
+# dev = [ "pytest", "pytest-cov" ]
+
+[project.scripts]
+# Standalone demo CLI, usable on any machine with the package installed:
+#     pt3g-j2534 send-probe --driver virtual
+pt3g-j2534 = "pt3g_j2534.pt3g_j2534_cli:main"
+
+[tool.setuptools]
+# Build the ctypes-compatible C extension next to pt3g_j2534.py
+packages = ["pt3g_j2534"]
+package-dir = {"pt3g_j2534" = "src/pt3g_j2534"}

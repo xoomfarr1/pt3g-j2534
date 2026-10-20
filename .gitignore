@@ -1,0 +1,22 @@
+# gitignore for the pt3g_j2534 standalone package
+# Build artifacts
+__pycache__/
+*.py[cod]
+*.so
+*.pyd
+*.pyo
+*.egg-info/
+build/
+dist/
+*.egg
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Editor / OS
+.DS_Store
+*.swp
+*~

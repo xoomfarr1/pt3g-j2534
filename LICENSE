@@ -1,0 +1,215 @@
+                    GNU GENERAL PUBLIC LICENSE
+                       Version 3, 29 June 2007
+
+ Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
+ Everyone is permitted to copy and distribute verbatim copies
+ of this license document, but changing it is not allowed.
+
+                            Preamble
+
+  The GNU General Public License is a free distribution license that
+guarantees end users the freedom to run, study, share and modify
+the software.  The preceding license notice and this warranty
+disclaimer must be preserved in all copies or substantial
+portions of the Software.
+
+  This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+                            TERMS AND CONDITIONS
+
+  0. Definitions.
+
+  "This License" refers to version 3 of the GNU General Public License.
+
+  "Copyright" also means copyright-like laws that apply to other kinds
+ of works, such as semiconductor masks.
+
+  "The Program" refers to any copyrightable work licensed under this
+ License.  Each licensee is addressed as "you".  "Licensees" and
+ "recipients" may be individuals or organizations.
+
+  To "modify" a work means to copy from or adapt all or part of the
+ work in a fashion requiring copyright permission, other than the
+ making of an exact copy.  The resulting work is called a "modified
+ version" of the earlier work or a work "based on" the earlier work.
+
+  A "covered work" means either the unmodified Program or a work based
+ on the Program.
+
+  To "propagate" a work means to do anything with it that, without
+ permission, would make you directly or secondarily liable for
+ infringement under applicable copyright law.  Propagation includes
+ copying, distribution (with or without modification), making available
+ to the public, and in some countries other activities as well.
+
+  To "convey" a work means any kind of propagation that enables other
+ parties to make or receive copies.  Mere interaction with a user
+ through a computer network, with no transfer of a copy, is not
+ conveying.
+
+  An interactive user interface displays "Appropriate Legal Notices" if
+ it includes a convenient and prominently visible feature that
+ (1) displays an appropriate copyright notice and the fact that the
+ Software is licensed under this License, and that the Software is
+ provided AS IS WITHOUT WARRANTY; (2) tells the user how to view a
+ copy of this License; and (3) does not display any warranty or
+ otherwise claim that the Software is free of defects.
+
+  1. Source Code.
+
+  The "source code" for a work means the preferred form of the work
+ for making modifications to it.  "Object code" means any non-source
+ form of a work.
+
+  A "Standard Interface" means an interface that either is an official
+ standard defined by a recognized standards body, or, in the case of
+ interfaces specified for a particular programming language, one that
+ is documented as being the official standard for that language.
+
+  The "System Libraries" of an executable work means the works that
+ are included in the normal form of packaging a Major Component, but
+ are not part of the work, and to run it with that work, are
+ components of the operating system or generally distributed among
+ the developers of a Major Component (e.g., the C Standard Library,
+ the C++ Standard Library, and system libraries needed for the
+ running of an executable work).  "Major Components" are the works
+ that are the primary components of an operating system, or
+ generally included in the normal distribution of a major
+ component, or that are generally distributed as separate files
+ that are arranged to be used with a Major Component.
+
+  The "Corresponding Source" for a work in object code form means all
+ the source code needed to generate, install, and (for an executable
+ work) run the object code and to modify the work, including
+ scripts to control those activities.  However, it does not include
+ the work's System Libraries, or general-purpose tools or generally
+ available free programs used to annotate, translate, or debug the
+ work.
+
+  2. Basic Permissions.
+
+  All rights granted under this License are granted for the term of
+ copyright on the Program, and are granted to you subject to the
+ following conditions: (1) you may copy, distribute and modify the
+ Program; (2) you may run the Program; and (3) you may convey the
+ Program under the conditions of this License.
+
+  3. Source Code Distribution.
+
+  You must accompany the source code with the Corresponding Source
+ for the Program, and you must include the Corresponding Source in the
+ same physical or electronic medium as the object code.
+
+  4. Compiled Object Code.
+
+  You may convey an object code work under Section 6 of this License
+ only if you also convey the Corresponding Source for the work under
+ the terms of Sections 4 and 5 of this License.
+
+  5. Conveying Modified Source Versions.
+
+  You may convey a work based on the Program in the form of
+ modified source code under the terms of Sections 1-4 of this
+ License, provided that you also meet all of the following conditions:
+
+    a) The covered work must carry prominent notices stating that
+       you modified it, and giving a relevant date.
+
+    b) The covered work must carry prominent notices stating that it
+       is released under this License and any conditions added under
+       section 7.
+
+    c) You must license the modified work under this License to all
+       third parties.
+
+    d) You may not impose any further restrictions on the rights
+       granted or affirmed under this License.
+
+  6. Conveying Non-Source Forms.
+
+  You may convey a covered work in object code form under the terms
+ of Sections 4-6 of this License, provided that you also convey the
+ Corresponding Source in some other way as required by this License.
+
+  7. No Further Restrictions.
+
+  You may not impose any further restrictions on the rights granted
+ or affirmed under this License.  You may not impose any further
+ restrictions on the rights granted or affirmed under this License.
+
+  8. Termination.
+
+  You may not propagate or modify the Program except as expressly
+ provided under this License.  Any attempt otherwise to propagate or
+ modify it is void, and will automatically terminate your rights
+ under this License.  However, if you cease all violation, your
+ license from a particular copyright holder is reinstated
+ (a) provisionally, unless and until the copyright holder
+ explicitly terminates your license, or (b) permanently, if the
+ copyright holder fails to notify you of the violation by some
+ reasonable means prior to 60 days after the date you ceased all
+ violation, or (c) permanently, if the copyright holder fails to
+ notify you of the violation by some reasonable means, prior to
+ the first time you conveyed the Program or a modified version of
+ the Program to any third party under this License.
+
+  9. Acceptance Not Required for Copying.
+
+  You need not accept this License in order to copy the Program or
+ any portion of it, but you may not propagate or modify it.  If you
+ wish to convey copies of the Program, or modify it, you must
+ accept this License.
+
+  10. Automatic Licensing of Downstream Recipients.
+
+  Each time you convey a covered work, the recipient automatically
+ receives a license from the original licensors to run, modify and
+ propagate that work, subject to this License.  You may not impose
+ any further restrictions on the recipients' exercise of the rights
+ granted by this License.
+
+  11. Patents.
+
+  A "contributor" is a copyright holder who authorizes use of the
+ Program under this License.  The work thus licensed is provided
+ "as is", without warranty of any kind, express or implied.  The
+ risk of using it, or the risk of failure to use it, is
+ assumed by you.  The license granted includes the non-exclusive,
+ worldwide, royalty-free right to use, modify, propagate and
+ convey the work.
+
+  12. No Implied Warranty.
+
+  BECAUSE THE PROGRAM IS LICENSED FREE OF CHARGE, THERE IS NO
+ WARRANTY FOR THE PROGRAM TO THE EXTENT PERMITTED BY APPLICABLE
+ LAW.  EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT
+ HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM "AS IS" WITHOUT
+ WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED.  [This
+ warranty does not apply to any liability or obligation assumed by
+ you or a third party under Section 6 of this License.]
+
+  13. Limitation of Liability.
+
+  IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR WRITTEN
+ AGREEMENT WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY
+ MODIFY AND/OR CONVEY THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO
+ YOU FOR DAMAGES, INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR
+ CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE
+ THE PROGRAM.
+
+  14. Interpretation.
+
+  If any provision of this License is held to be invalid or
+ unenforceable, the remainder of the License will remain in effect
+ and the provision will be interpreted so as to give effect to the
+ original intent of the parties.  Other provisions remain in full
+ force and effect.  This License shall be interpreted in accordance
+ with the principles of applicable law.
+
+  END OF TERMS AND CONDITIONS
