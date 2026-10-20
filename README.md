@@ -1,8 +1,8 @@
 # PT3G-J2534 — Open-source SAE J2534-1 pass-thru driver
 
-Open-source, cross-platform implementation of the **SAE J2534-1 v04.04 and
-v05.00 `PassThru*`** API for the **PT3G VCI** — the interface Porsche's PIWIS
-III diagnostic software uses. This is a standalone, installable Python package
+Open-source, Windows build of the **SAE J2534-1 v04.04 and v05.00
+`PassThru*`** API for the **PT3G VCI** — the interface Porsche's PIWIS III
+diagnostic software uses. This is a standalone, installable Python package
 (GPL-3.0), independent of any other toolchain.
 
 It exposes the standard J2534 `PassThruOpen` / `PassThruClose` /
@@ -30,10 +30,8 @@ pip install -e .
 ```
 
 This builds `_pt3g_j2534` and installs the package as editable with MSVC
-(`/O2` + `/std:c++17` on Windows).
-
-This package has **no Python runtime dependencies** — the J2534 surface is a
-compiled C extension over ctypes.
+(`/O2` + `/std:c++17` on Windows). The package has **no Python runtime
+dependencies** — the J2534 surface is a compiled C extension over ctypes.
 
 ## Quick start
 
@@ -48,9 +46,8 @@ pt3g_j2534.PassThruClose(h)
 
 ## Building a Windows `.pyd` (standalone, no MSVC on the build box)
 
-Because `pip install -e .` needs a compiler, and PyInstaller cannot
-cross-compile, the cleanest approach when cross-compiling from Linux is to
-build the `.pyd` directly with MinGW-w64:
+Because `pip install -e .` needs a compiler and PyInstaller can't cross-compile,
+the cleanest approach is to build the `.pyd` directly with MinGW-w64:
 
 ```bash
 # Debian/Ubuntu
@@ -65,8 +62,8 @@ x86_64-w64-mingw32-g++ -shared \
     -lkernel32 -luser32 -lwinpthread
 ```
 
-The resulting `_pt3g_j2534.pyd` is a self-contained Windows DLL (it statically
-links the C++ runtime) that the Python wrapper loads via `ctypes.CDLL`.
+The result is a self-contained Windows DLL (it statically links the C++
+runtime) that the Python wrapper loads via `ctypes.CDLL`.
 
 ## Version support
 
