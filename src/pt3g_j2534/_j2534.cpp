@@ -36,6 +36,7 @@
 #include <queue>
 #include <string>
 #include <vector>
+#include <Python.h>
 
 // ---------------------------------------------------------------------------
 // Platform plumbing
@@ -861,4 +862,25 @@ extern "C" EXPORT LONG PassThruGetNextDevice(HANDLE hPassThru, DWORD dwFeature,
         return J2534_ERR_INVALID_HANDLE;
     }
     return g_backend->getNextDevice(pvData, pulSize, pulBytesTransferred);
+}
+
+// ---------------------------------------------------------------------------
+// Python module definition (_pt3g_j2534)
+// ---------------------------------------------------------------------------
+#include <Python.h>
+
+static struct PyModuleDef _pt3g_j2534_module = {
+    PyModuleDef_HEAD_INIT,
+    "_pt3g_j2534",
+    NULL,
+    0,
+    NULL,
+    NULL,
+    NULL,
+    NULL,
+    NULL
+};
+
+PyMODINIT_FUNC PyInit__pt3g_j2534(void) {
+    return PyModule_Create(&_pt3g_j2534_module);
 }
